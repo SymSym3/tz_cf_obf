@@ -4,9 +4,10 @@ const all_level = [
     "High-hyperboost42",  // 22元 有全部db1和db2 + cdg 800G流量
     "VIP1-mernfrank",     // 28元 有全部db1和db2与直连dj 以及nnr中专dj
     "Customize-1173",     // 定制
+    "Customize-sein2a",   // 定制sein2a
     "VIP2-hyperboost42",  // 28元 有全部db1和db2 以及gr中专db1
-    "Admin-dmin16",        // 管理员订阅
-    "Admin-dminFj",        // 副管理员订阅
+    "Admin-dmin16",       // 管理员订阅
+    "Admin-dminFj",       // 副管理员订阅
 ];
 
 const date9999_RegExp = new RegExp('9999-99-99', 'g');
