@@ -437,7 +437,7 @@ export default {
             await sendMessage("#level错误", request.headers.get('CF-Connecting-IP'), `UA: ${userAgentHeader}</tg-spoiler>\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>\n无效的等级: ${level}\n用户: ${userInfo.user_name}`);
             return new Response('Invalid level', { status: 403 });
         }
-
+        
         if (userInfo.level != level) {
             await sendMessage("#level错误", request.headers.get('CF-Connecting-IP'), `UA: ${userAgentHeader}</tg-spoiler>\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>\n不匹配的等级: ${level}\n用户: ${userInfo.user_name}`);
             return new Response('Mismatched level', { status: 403 });
