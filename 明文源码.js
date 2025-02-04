@@ -3,7 +3,7 @@ const all_level = [
     "Normal-db1",         // 10元有全部db1和db2 200G流量 16元 有全部db1和db2 400G流量 不含cdg
     "High-hyperboost42",  // 22元 有全部db1和db2 + cdg 800G流量
     "VIP1-mernfrank",     // 28元 有全部db1和db2与直连dj 以及nnr中专dj
-    "Customize-1173",     // 定制
+    "Customize-1173",     // 定制xzr
     "Customize-sein2a",   // 定制sein2a
     "VIP2-hyperboost42",  // 28元 有全部db1和db2 以及gr中专db1
     "Admin-dmin16",       // 管理员订阅
@@ -15,24 +15,20 @@ const administrator_uuid = "1f341cba-24ae-4b38-a52f-040825cadf9b";
 const administrator_uuid_RegExp = new RegExp(administrator_uuid, 'g');
 
 let uuidMapInfo = new Map();
-uuidMapInfo.set("1f341cba-24ae-4b38-a52f-040825cadf9b", { level: "Admin-dmin16",        user_name: "sym",       expireDate: "2099-09-09 -1" });
-uuidMapInfo.set("6fd8ee5c-8569-43ad-a636-1b8c97c5140f", { level: "VIP2-hyperboost42",   user_name: "zxf",       expireDate: "2030-01-01 800GB+200" });
-uuidMapInfo.set("e3cb1dc2-6c3d-48c9-8881-4d5db4674536", { level: "Customize-sein2a",    user_name: "sein2a",    expireDate: "2025-05-05 800GB+600" });
-uuidMapInfo.set("26c36ce8-8df7-4b09-d1b4-23d4ad14b5f3", { level: "VIP1-mernfrank",      user_name: "kevin",     expireDate: "2025-05-09 800GB+300" });
-uuidMapInfo.set("f579d6d3-a7d3-4633-f519-27b25402e1bb", { level: "VIP2-hyperboost42",   user_name: "oldzhang",  expireDate: "2025-08-27 800GB+200" });
-uuidMapInfo.set("4f1af3a7-2872-4868-e955-84865342fd42", { level: "VIP2-hyperboost42",   user_name: "yin",       expireDate: "2024-11-06 800GB+200" });
-uuidMapInfo.set("511a171f-6ca4-4b64-bd0d-7ad83a05ab11", { level: "Normal-db1",          user_name: "psycho",    expireDate: "2025-02-06 400" });
-uuidMapInfo.set("bde98f18-a15f-4316-e5bb-a6d177fb9551", { level: "Normal-db1",          user_name: "oldfuck",   expireDate: "2025-01-07 200" });
-uuidMapInfo.set("2a739678-3b0c-4661-87da-df612c397d2b", { level: "VIP2-hyperboost42",   user_name: "zxfyou",    expireDate: "2024-09-14 800GB+200" });
-uuidMapInfo.set("d5718c0b-ebfd-4b58-bcf8-d4cb83cf15d7", { level: "Normal-db1",          user_name: "ti7_cyjq",  expireDate: "2025-06-22 200" });
-uuidMapInfo.set("5f8c7de6-f217-4ff8-a4d1-7d36f4673f3e", { level: "Basics-db2",          user_name: "human",     expireDate: "2024-08-31 10" });
-uuidMapInfo.set("58415d21-7f7c-473a-bd72-e452a1d5ad9b", { level: "Customize-1173",      user_name: "xzr",       expireDate: "2099-09-09 -1" });
+uuidMapInfo.set("1f341cba-24ae-4b38-a52f-040825cadf9b", { level: "Admin-dmin16",        user_name: "sym",       expireDate: "2999-09-09 无限流量" });
+uuidMapInfo.set("6fd8ee5c-8569-43ad-a636-1b8c97c5140f", { level: "VIP2-hyperboost42",   user_name: "zxf",       expireDate: "2030-01-01 200G国内中转流量+800G直连流量" });
+uuidMapInfo.set("e3cb1dc2-6c3d-48c9-8881-4d5db4674536", { level: "Customize-sein2a",    user_name: "sein2a",    expireDate: "2025-05-05 1T国内中转流量+600G直连流量" });
+uuidMapInfo.set("26c36ce8-8df7-4b09-d1b4-23d4ad14b5f3", { level: "VIP1-mernfrank",      user_name: "kevin",     expireDate: "2025-05-09 1T国内中转流量+400G直连流量" });
+uuidMapInfo.set("f579d6d3-a7d3-4633-f519-27b25402e1bb", { level: "VIP2-hyperboost42",   user_name: "oldzhang",  expireDate: "2025-08-27 200G国内中转流量+800G直连流量" });
+uuidMapInfo.set("4f1af3a7-2872-4868-e955-84865342fd42", { level: "VIP2-hyperboost42",   user_name: "yin",       expireDate: "2025-02-06 200G国内中转流量+800G直连流量" });
+uuidMapInfo.set("511a171f-6ca4-4b64-bd0d-7ad83a05ab11", { level: "Normal-db1",          user_name: "psycho",    expireDate: "2025-02-06 400G直连流量" });
+uuidMapInfo.set("bde98f18-a15f-4316-e5bb-a6d177fb9551", { level: "Normal-db1",          user_name: "oldfuck",   expireDate: "2025-01-07 200G直连流量" });
+uuidMapInfo.set("2a739678-3b0c-4661-87da-df612c397d2b", { level: "VIP2-hyperboost42",   user_name: "zxfyou",    expireDate: "2024-09-14 200G国内中转流量+800G直连流量" });
+uuidMapInfo.set("d5718c0b-ebfd-4b58-bcf8-d4cb83cf15d7", { level: "Normal-db1",          user_name: "ti7_cyjq",  expireDate: "2025-06-22 200G直连流量" });
+uuidMapInfo.set("5f8c7de6-f217-4ff8-a4d1-7d36f4673f3e", { level: "Basics-db2",          user_name: "human",     expireDate: "2025-08-31 " });
+uuidMapInfo.set("58415d21-7f7c-473a-bd72-e452a1d5ad9b", { level: "Customize-1173",      user_name: "xzr",       expireDate: "2999-09-09 无限流量" });
 
-const readMe_text = '说明:到期时间9999-99-99GB+10GB备用节点流量';
-const readMe_db2f = `
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@db2f.hyperboost42.cc:443?encryption=none&security=tls&sni=db2f.hyperboost42.cc&fp=chrome&type=ws&host=db2f.hyperboost42.cc&path=%2FwsData52987#${encodeURIComponent(readMe_text)}
-`;
-
+const readMe_text = '说明:到期时间9999-99-99+10GB备用节点流量';
 const db2_EndPs = '大版备用';
 const Basics_db2 = `
 vless://1f341cba-24ae-4b38-a52f-040825cadf9b@db2f.hyperboost42.cc:443?encryption=none&security=tls&sni=db2f.hyperboost42.cc&fp=chrome&type=ws&host=db2f.hyperboost42.cc&path=%2FwsData52987#${encodeURIComponent(db2_EndPs)}f0
@@ -53,8 +49,6 @@ vless://1f341cba-24ae-4b38-a52f-040825cadf9b@cft1.hyperboost42.cc:443?encryption
 vless://1f341cba-24ae-4b38-a52f-040825cadf9b@cft2.hyperboost42.cc:443?encryption=none&security=tls&sni=db1t.hyperboost24.cc&fp=chrome&type=ws&host=db1t.hyperboost24.cc&path=%2FwsData52987#${encodeURIComponent(db1_EndPs)}t2
 vless://1f341cba-24ae-4b38-a52f-040825cadf9b@cft3.hyperboost42.cc:443?encryption=none&security=tls&sni=db1t.hyperboost24.cc&fp=chrome&type=ws&host=db1t.hyperboost24.cc&path=%2FwsData52987#${encodeURIComponent(db1_EndPs)}t3
 `;
-//vless://1f341cba-24ae-4b38-a52f-040825cadf9b@cft4.hyperboost42.cc:443?encryption=none&security=tls&sni=db1t.hyperboost24.cc&fp=chrome&type=ws&host=db1t.hyperboost24.cc&path=%2FwsData52987#${encodeURIComponent(db1_EndPs)}t4
-//vless://1f341cba-24ae-4b38-a52f-040825cadf9b@cf4.hyperboost42.cc:443?encryption=none&security=tls&sni=db1f.hyperboost42.cc&fp=chrome&type=ws&host=db1f.hyperboost42.cc&path=%2FwsData52987#${encodeURIComponent(db1_EndPs)}f4
 
 const High_hyperboost42 = `
 `;
@@ -72,16 +66,15 @@ vless://1f341cba-24ae-4b38-a52f-040825cadf9b@dj.mernfrank.cc:443?encryption=none
 `;
 
 const VIP2_hyperboost42 = `
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr1.hyperboost42.cc:42737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr1沪日IEPL线路 (国内中转流量15倍率)')}
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr2.hyperboost42.cc:11737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr2沪移线路 (国内中转流量2倍率)')}
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr3.hyperboost42.cc:51737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr3沪港IEPL线路 (国内中转流量10倍率)')}
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr4.hyperboost42.cc:31737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr4广港IEPL线路 (国内中转流量10倍率)')}
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr5.hyperboost42.cc:11737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr5广移线路 (国内中转流量3倍率)')}
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr6.hyperboost42.cc:12737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr6广移线路 (国内中转流量1.5倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr1.hyperboost42.cc:42737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr1沪日IEPL电信移动双线 (国内中转流量16倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr2.hyperboost42.cc:31737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr2沪日IEPL联通线路 (国内中转流量16倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr3.hyperboost42.cc:51737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr3沪港IEPL线路 (国内中转流量10倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr4.hyperboost42.cc:31737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr4广港IEPL线路 (国内中转流量10倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr5.hyperboost42.cc:12737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr5江苏移动线路 (国内中转流量3倍率)')}
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr6.hyperboost42.cc:11737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版中转gr6广东移动线路 (国内中转流量4倍率)')}
 `;
-//vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr7.hyperboost42.cc:12737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent('大版国内中转gr7沪移线路 (国内中转流量1.5倍率)')}
 
-//定制节点
+//定制节点xzr
 const Customize_1173Info = `
 vless://58415d21-7f7c-473a-bd72-e452a1d5ad9b@152.69.234.110:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=kr.mernfrank.cc&fp=edge&type=tcp&headerType=none#%E9%9F%A9%E5%9B%BD%E7%9B%B4%E8%BF%9E
 vless://58415d21-7f7c-473a-bd72-e452a1d5ad9b@kr.mernfrank.cc:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=kr.mernfrank.cc&fp=edge&type=tcp&headerType=none#%E9%9F%A9%E5%9B%BD%E7%9B%B4%E8%BF%9E
@@ -93,13 +86,14 @@ vless://58415d21-7f7c-473a-bd72-e452a1d5ad9b@cf4.hyperboost42.cc:443?encryption=
 vless://58415d21-7f7c-473a-bd72-e452a1d5ad9b@zzgr_kr.mernfrank.cc:16737?encryption=none&security=none&type=tcp&headerType=none#%E9%9F%A9%E5%9B%BD%E5%B9%BF%E7%A7%BB%EF%BC%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%E6%B5%81%E9%87%8F1.5%E5%80%8D%E7%8E%87%EF%BC%89
 `;
 
-//定制节点
+//定制节点sein2a
 const Customize_sein2a = `
-vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr1.mernfrank.cc:42738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr1沪日IEPL电信移动双线 (国内中转流量15倍率)")}
-vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr2.mernfrank.cc:42738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr2沪日IEPL联通线路 (国内中转流量15倍率)")}
+vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr1.mernfrank.cc:42738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr1沪日IEPL电信移动双线 (国内中转流量16倍率)")}
+vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr2.mernfrank.cc:42738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr2沪日IEPL联通线路 (国内中转流量16倍率)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr3.mernfrank.cc:51738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr3沪港IEPL线路 (国内中转流量10倍率)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr4.mernfrank.cc:31738?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr4广港IEPL线路 (国内中转流量10倍率)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr5.mernfrank.cc:12739?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr5江苏移动线路 (国内中转流量3倍率)")}
+vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@zzgr6.mernfrank.cc:12737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#${encodeURIComponent("东京中转gr6广东移动线路 (国内中转流量4倍率)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@5.226.49.135:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=dj.mernfrank.cc&fp=chrome&type=tcp&headerType=none#${encodeURIComponent("东京高速直连0 (不消耗国内中转流量)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@dj.mernfrank.cc:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=dj.mernfrank.cc&fp=chrome&type=tcp&headerType=none#${encodeURIComponent("东京高速直连0 (不消耗国内中转流量)")}
 vless://e3cb1dc2-6c3d-48c9-8881-4d5db4674536@db1f.hyperboost42.cc:443?encryption=none&security=tls&sni=db1f.hyperboost42.cc&fp=chrome&type=ws&host=db1f.hyperboost42.cc&path=%2FwsData52987#${encodeURIComponent(db1_EndPs)}f0
@@ -114,9 +108,7 @@ vless://1f341cba-24ae-4b38-a52f-040825cadf9b@db2f.hyperboost42.cc:443?encryption
 `;
 
 const adminLink = `
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr8.hyperboost42.cc:31737?encryption=none&security=none&fp=edge&type=tcp&headerType=none#%E5%A4%A7%E7%89%88%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%ACgr8%E6%B7%B1%E6%B8%AFIPLC%E7%BA%BF%E8%B7%AF%20%28%E6%B5%81%E9%87%8F40%E5%80%8D%E7%8E%87%29
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@zzgr1.game.mernfrank.cc:41737?encryption=none&flow=xtls-rprx-vision&security=none&sni=dj.mernfrank.cc&fp=chrome&type=tcp&headerType=none#%E6%B8%B8%E6%88%8Fgr%E6%B2%AA%E6%97%A5%20%28%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%E6%B5%81%E9%87%8F15%E5%80%8D%E7%8E%87%29
-vless://1f341cba-24ae-4b38-a52f-040825cadf9b@shjp1-08051751.520300.xyz:41737?encryption=none&security=none&type=tcp&headerType=none#%E6%B8%B8%E6%88%8Fgr%E6%B2%AA%E6%97%A5%20%28%E5%9B%BD%E5%86%85%E4%B8%AD%E8%BD%AC%E6%B5%81%E9%87%8F15%E5%80%8D%E7%8E%87%29
+vless://1f341cba-24ae-4b38-a52f-040825cadf9b@5.226.49.135:41737?encryption=none&security=none&type=tcp&headerType=none#%E6%B8%B8%E6%88%8F%E7%9B%B4%E8%BF%9E%E4%B8%8D%E5%8F%AF%E7%94%A8%E5%8F%A4%E5%93%A5
 `;
 
 const all_info = [Basics_db2, Normal_db1, High_hyperboost42, VIP1_mernfrank];
@@ -437,13 +429,12 @@ export default {
             await sendMessage("#level错误", request.headers.get('CF-Connecting-IP'), `UA: ${userAgentHeader}</tg-spoiler>\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>\n无效的等级: ${level}\n用户: ${userInfo.user_name}`);
             return new Response('Invalid level', { status: 403 });
         }
-        
+
         if (userInfo.level != level) {
             await sendMessage("#level错误", request.headers.get('CF-Connecting-IP'), `UA: ${userAgentHeader}</tg-spoiler>\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>\n不匹配的等级: ${level}\n用户: ${userInfo.user_name}`);
             return new Response('Mismatched level', { status: 403 });
         }
-
-        link = readMe_db2f.replace(date9999_RegExp, userInfo.expireDate);
+        link = `vless://1f341cba-24ae-4b38-a52f-040825cadf9b@db2f.hyperboost42.cc:443?encryption=none&security=tls&sni=db2f.hyperboost42.cc&fp=chrome&type=ws&host=db2f.hyperboost42.cc&path=%2FwsData52987#${encodeURIComponent(readMe_text.replace(date9999_RegExp, userInfo.expireDate))}`;
         if (level == "Customize-1173") {
             link = Customize_1173Info;
         } else if (level == "Customize-sein2a") {
